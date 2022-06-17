@@ -1,0 +1,160 @@
+body {
+    /*J'applique une taille maximale*/
+    max-width: 1400px;
+    margin: auto;
+    padding: 0;
+    /*J'applique la couleur principale de fond de ma page*/
+    background-color: white;
+    /*Je définis la façon dont la hauteur et largeur sont calculées*/
+    box-sizing: border-box;
+    /*border-box implique que la bordure est prise en compte dans le calcul de dimensions*/
+    /*J'applique mon style de police personnalisé pour ma page web*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    list-style: none;
+    /*aucun style de liste = aucunes puces */
+    text-decoration: none;
+    /*aucune décoration de texte*/
+}
+
+.header-flex {
+    display: flex;
+    /* j'applique un espace */
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+nav ul li {
+    /* je place et espace mes boutons de navbar */
+    margin-top: 3rem;
+    margin-left: 1rem;
+}
+
+.navlinks-container a {
+    margin: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #252a30;
+    display: inline-block;
+    position: relative;
+}
+
+.navlinks-container a:hover {
+    color: #f47d2e;
+}
+
+.navlinks-container a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    height: 1px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #f47d2e;
+    transition: transform 0.3s ease-out;
+}
+
+.navlinks-container a:hover::after {
+
+    transform: scaleX(1)
+}
+
+.formulaire {
+    background-color: #e6dede;
+    border-radius: 15px;
+}
+
+.formulaire p {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 0.5rem;
+}
+
+.cart__order__form {
+    width: 100%;
+}
+
+.cart__order__form__question {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart__order__form__question input {
+    border-radius: 13px;
+    border: 0;
+    height: 20px;
+}
+
+.cart__order__form__question input:focus {
+    outline: none;
+}
+
+.cart__order__form__question p {
+    margin: 0;
+    color: red;
+    font-size: 15px;
+    margin-left: 8px;
+}
+
+.cart__order__form__submit {
+    display: flex;
+    justify-content: center;
+
+}
+
+.cart__order__form__submit input {
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    color: white;
+    background-color: #252a30;
+    border: white;
+    border-radius: 5px;
+}
+
+.cart__order__form__submit input:hover {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #f47d2e;
+    background-color: white;
+    border: white;
+    border-radius: 5px;
+}
+
+.footer {
+    margin-top: 1rem;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #e6dede;
+    padding: 5px 0 5px 0;
+    border-radius: 10px;
+}
+
+.footer div {
+    padding: 5px 0 5px 0;
+}
+
+.footer i {
+    font-size: 20px;
+    color: #252a30;
+}
+
+.footer i span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.footer i:hover {
+    color: #f47d2e;
+}

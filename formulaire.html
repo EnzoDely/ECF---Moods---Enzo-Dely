@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-formulaire.css">
+    <script src="https://kit.fontawesome.com/5c113c2881.js" crossorigin="anonymous"></script>
+    <title>Inscription - Moods</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Ressources/images/favicon/favicon-bluewhite.ico">
+</head>
+
+<body>
+    <header>
+        <div class="header-flex">
+            <div class="header-logo">
+                <!--LOGO-->
+                <a href="index.html"><img src="Ressources/images/logo/LogoOrange-250x150.png" alt="Logo Moods"></a>
+            </div>
+            <!--MENU DE NAVIGATION-->
+            <nav class="navlinks-container">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="formulaire.html">Inscription</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="formulaire" id="formulaire">
+        <p>Inscrivez-vous pour recevoir les dernières offres , suivre vos colis ou accéder à vos services personnalisés.
+        </p>
+        <form method="get" class="cart__order__form">
+            <div class="cart__order__form__question">
+                <label for="pseudo">Pseudo :</label>
+                <input type="text" name="pseudo" id="pseudo" required>
+                <p id="pseudoErrorMsg">
+                    <!-- ci est un message d'erreur -->
+                </p>
+            </div>
+            <div class="cart__order__form__question">
+                <label for="password">Mot de passe :</label>
+                <input type="password" name="password" id="password" required>
+                <p id="passwordErrorMsg"></p>
+            </div>
+            <div class="cart__order__form__question">
+                <label for="passwordBis">Confirmation de mot de passe :</label>
+                <input type="password" name="passwordBis" id="passwordBis" required>
+                <p id="passwordBisErrorMsg"></p>
+            </div>
+            <div class="cart__order__form__question">
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required>
+                <p id="emailErrorMsg"></p>
+            </div>
+            <div class="cart__order__form__submit">
+                <input type="button" value="Envoyer" id="envoyer">
+            </div>
+        </form>
+    </section>
+    <footer class="footer">
+        <div>
+            <a href="https://github.com/EnzoDely" target="_blank">
+                <i class="fa-brands fa-github"> <span>EnzoDely</span></i>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.linkedin.com/in/enzodely/" target="_blank">
+                <i class="fa-brands fa-linkedin"> <span>Enzo Dely</span></i>
+            </a>
+        </div>
+    </footer>
+    <script src="script-form.js"></script>
+</body>
+
+</html>
