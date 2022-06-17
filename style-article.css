@@ -105,7 +105,24 @@ nav ul li {
 .right-side span {
     font-weight: 700;
 }
+.listen{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 0.5rem;
+}
+.listen i {
+    font-size: 20px;
+    color: #252a30;
+}
 
+.listen i span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+.listen i:hover {
+    color: #f47d2e;
+}
 .ajoutpanier {
     border: 1px #f47d2e solid;
     border-radius: 5px;
